@@ -15,7 +15,7 @@ function storeVector() {
         messageBox.textContent = `${input.value} was added to A[${position}]. Insert A[${position+1}]`;
 
         //Must fix preventDefault first
-        // input.value = '';
+        input.value = '';
 
         console.log(a)
         if (position === 7){
@@ -30,7 +30,7 @@ function storeVector() {
         messageBox.textContent = `${input.value} was added to B[${position}]. Insert B[${position+1}]`;
 
         //Must fix preventDefault first
-        // input.value = '';
+        input.value = '';
 
         console.log(b)
         if (position === 7){

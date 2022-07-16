@@ -22,6 +22,12 @@ input{
     width: 4rem;
 }
 
+button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+}
+
 form{
     display: flex;
     gap: 1rem;
