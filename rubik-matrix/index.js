@@ -1,4 +1,5 @@
 const squareMatrix = document.querySelectorAll('.square');
+const messageBox = document.querySelector('h3');
 
 for (let i = 0; i < squareMatrix.length; i++) {
     squareMatrix[i].key = i;
@@ -94,5 +95,20 @@ function cicleColor(element) {
             element.classList.remove('green');
             element.classList.add('blue');
             break;
+    }
+
+    if (
+        squareMatrix[0].color === squareMatrix[1].color &&
+        squareMatrix[0].color === squareMatrix[2].color &&
+        squareMatrix[0].color === squareMatrix[3].color &&
+        squareMatrix[0].color === squareMatrix[4].color &&
+        squareMatrix[0].color === squareMatrix[5].color &&
+        squareMatrix[0].color === squareMatrix[6].color &&
+        squareMatrix[0].color === squareMatrix[7].color &&
+        squareMatrix[0].color === squareMatrix[8].color
+    )   {
+        messageBox.innerHTML = `Congratulations! You did it! <b>Restart?</b>`;
+        messageBox.style.cursor = 'pointer';
+        messageBox.addEventListener('click', ()=>{location.reload()})
     }
 }

@@ -5,23 +5,28 @@
 }
 
 body{
+    color: #FFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    gap: 10rem;
+    gap: 4rem;
     background-image: linear-gradient(to bottom right, #5b004d, #c40099, #7800c9, #7800c9, #4f0174);
 }
 
 h1{
     font-family: 'Courier New', Courier, monospace;
-    color: #FFFF;
     font-size: 2.5rem;
     word-break: normal;
     text-align: center;
     text-shadow: 6px 6px 6px #000F;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
 }
 
 main{
