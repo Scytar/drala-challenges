@@ -109,6 +109,19 @@ function cicleColor(element) {
     )   {
         messageBox.innerHTML = `Congratulations! You did it! <b>Restart?</b>`;
         messageBox.style.cursor = 'pointer';
-        messageBox.addEventListener('click', ()=>{location.reload()})
+        messageBox.addEventListener('click', ()=>{location.reload()});
+    } else {
+        messageBox.innerHTML = `Make all squares same color`;
     }
+    // console.log(
+    //     squareMatrix[0].color,
+    //     squareMatrix[1].color,
+    //     squareMatrix[2].color,
+    //     squareMatrix[3].color,
+    //     squareMatrix[4].color,
+    //     squareMatrix[5].color,
+    //     squareMatrix[6].color,
+    //     squareMatrix[7].color,
+    //     squareMatrix[8].color,
+    //     )
 }
